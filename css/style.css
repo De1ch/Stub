@@ -1,12 +1,4 @@
 /*
-	Theme Name: Danio
-	Theme URI: //template.danio.itembridge.com/
-	Author: InfoStyle
-	Author URI: https://themeforest.net/user/itembridgethemes
-	Description: Danio responsive theme
-	Version: 1.0.2
-	License: ThemeForest Regular & Extended License
-	License URI: http://themeforest.net/licenses/regular_extended
 
 	[Table of contents]
 	1. Typography ---------------- #line 30
@@ -820,20 +812,14 @@ body {
   color: #fff;
 }
 
-.video-bg {
-  background: url(../content/video-bg.jpg) 50% 50%/cover no-repeat fixed;
-}
 .video-bg #wrapper {
-  background-color: rgba(0, 0, 0, 0.75);
+  background-color: rgba(37, 37, 38, 0.73);
 }
 
 .default-bg {
   background: #274bd3;
 }
 
-body.under-construction {
-  background: url(../content/bg-under.jpg) 50% 50%/cover no-repeat fixed;
-}
 body.under-construction #wrapper {
   background-color: rgba(0, 0, 0, 0.5);
 }
