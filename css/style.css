@@ -1051,6 +1051,12 @@ body.under-construction #wrapper {
 }
 
 /* AUDIO PLAYER */
+
+.soundPlay {
+  cursor: pointer;
+  color: #666666;
+}
+
 .soundPlay img {
   cursor: pointer;
   filter: invert(1);
