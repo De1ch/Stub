@@ -3,7 +3,7 @@
 
 		function i() {
 
-			eventDate = (Date.parse(new Date().toDateString())+86400000) / 1e3;
+			eventDate = new Date('2030-01-05T12:00:00');
 
 			currentDate = Math.floor($.now() / 1e3);
 
@@ -30,29 +30,22 @@
 
 			if (!isNaN(eventDate)) {
 
-				if(weeks == 00){
-					if(days == 00){
-						firstNumb = hours;
-						secondNumb = minutes;
-						thirdNumb = seconds;
-						i1 = 'h';
-						i2 = 'm';
-						i3 = 's';	
-					} else {
+				if(weeks !== 0){
+					if(days !== 0){
 						firstNumb = days;
 						secondNumb = hours;
 						thirdNumb = minutes;
-						i1 = 'd';
-						i2 = 'h';
-						i3 = 'm';
+						i1 = 'д';
+						i2 = 'ч';
+						i3 = 'м';
 					}
 				} else {
 					firstNumb = weeks;
 					secondNumb = days;
 					thirdNumb = hours;
-					i1 = 'w';
-					i2 = 'd';
-					i3 = 'h';
+					i1 = 'н';
+					i2 = 'д';
+					i3 = 'ч';
 				}
 				if (eventDate <= currentDate) {
 					firstNumb = '00';
@@ -71,7 +64,7 @@
 				}
 
 			} else {
-				console.log("Invalid date. Example: 13 march 2015 09:00:00");
+				console.log("Invalid date. Example: 13 march 2020 09:00:00");
 				clearInterval(interval)
 			}
 		}

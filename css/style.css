@@ -996,10 +996,6 @@ body.under-construction #wrapper {
     width: 60px;
   }
 }
-.et-logo {
-  -webkit-animation: logo-glitch 12s ease infinite;
-  animation: logo-glitch 12s ease infinite;
-}
 
 @-webkit-keyframes logo-glitch {
   0% {
@@ -1054,11 +1050,24 @@ body.under-construction #wrapper {
   font-size: 1.125rem;
 }
 
+/* AUDIO PLAYER */
+.soundPlay img {
+  cursor: pointer;
+  filter: invert(1);
+}
+
+.play {
+  cursor: pointer;
+}
+
+.off {
+  cursor: pointer;
+}
+
 /*---------------------------------*/
 /*------------- FOOTER ------------*/
 /*---------------------------------*/
 .site-footer {
-  bottom: 0;
   bottom: 0;
   padding: 22px 65px;
   position: absolute;
