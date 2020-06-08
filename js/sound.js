@@ -18,13 +18,12 @@ const sound = new Audio();
 sound.src = "video/sound.mp3";
 
 document.querySelector('.soundPlay').onclick = function() {
-    /* проверяем если музыка не на паузе воспроизводим*/
-    if (sound.paused == true) {
+    if (sound.paused === true) {
         sound.play();
         sound.autoplay = true;
         document.querySelector('.soundPlay').innerHTML = ' <br> <img src="img/Volume_Off.webp" alt="sound" height="50px" width="50px"></div>';
         $('.soundPlay').removeClass('play').addClass('off');
-        sound.volume=0.1;
+        sound.volume=0.15;
     } else {
         sound.pause();
         document.querySelector('.soundPlay').innerHTML = ' <br> <img src="img/sound-on.png" alt="sound" height="47px" width="47px"></div>';
